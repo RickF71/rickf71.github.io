@@ -7,7 +7,7 @@ export const Home = () => {
             <Container>
                 <Row><h1>Richard Fleischman</h1></Row>
                 <p>
-                    Hello I am a computer programmer with a wide variety of experience
+                    Hello! I am a computer programmer with a wide variety of experience
                     in many aspects of Web based and other programming.
                     In addition I've worked with many different database systems.
                 </p>
