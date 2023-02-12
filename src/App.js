@@ -1,6 +1,7 @@
-import { Navbar, NavbarBrand, Nav, Container, Row, Col
-        , ThemeProvider } from 'react-bootstrap';
-import { Routes, Route } from 'react-router-dom';
+import { Nav, Container } from 'react-bootstrap';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navbar, NavbarBrand } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { Resume } from './Resume';
 import { Resume2 } from './Resume2';
 import { Home } from './Home';
@@ -16,38 +17,39 @@ const theme = {
   secondary: '#f50057'
 };
 
+const Navmain = () => (
+  // <ThemeProvider theme={theme}>
+    <Navbar bg="dark" fg="light" expand="md" variant="dark">
+      <Container className="App">
+        <NavbarBrand to="/">Richard Fleischman</NavbarBrand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse>
+          <Nav className="mr-auto">
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/resume2">Resume</Nav.Link>
+            <Nav.Link as={Link} to="/examples">Examples</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  // </ThemeProvider>
+);
+
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Navbar bg="dark" fg="light" expand="md" variant="dark">
-        <Container className="App">
-          <NavbarBrand href="#">Richard Fleischman</NavbarBrand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse>
-            <Nav className="mr-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/resume2">Resume</Nav.Link>
-              {/* <Nav.Link href="/resume2">Resume2</Nav.Link> */}
-              <Nav.Link href="/examples">Examples</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
-
-
-      {/* Define Routes  */}
-      <Routes>
+    <Router>
+        <Navmain />
+        <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="/resume" element={ <Resume/> } />
         <Route path="/resume2" element={ <Resume2/> } />
         <Route path="/examples" element={ <Examples/> } />
         <Route path="/about" element={ <About/> } />
         <Route path="/contact" element={ <Contact/> } />
-      </Routes>
-    </ThemeProvider>
+        </Routes>
+    </Router>
   );
 }
 

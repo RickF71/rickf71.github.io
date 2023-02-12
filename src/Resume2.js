@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, ThemeProvider} from 'react-bootstrap';
 import { ListGroup } from 'react-bootstrap';
-import { Badge } from 'react-bootstrap';
 //import { resumeHeader } from './data/resumeData'
 import { resumeExperience } from './data/resumeData';
 import './Resume2.css';
@@ -57,7 +56,6 @@ const styles = {
         paddingLeft: '.2rem',
         paddingRight: '.2rem',
         fontSize:'0.9rem',
-        // backgroundColor:'#dddddd',
         background: "linear-gradient(0deg, #aaa, #d7ced7 1.25rem)",
         border: '1px solid #565656',
         borderRadius: '.5rem', 
@@ -70,13 +68,13 @@ function Exp({ exp }) {
     return (
         <div style={styles.expJobItem}>
             <Container>
-            <Row style={styles.expJobItemHead}>
-                <Col xs={4} style={{textAlign: 'left',}}>{exp.title} </Col>
-                <Col xs={4} style={{textAlign: 'center',}}>{exp.company}</Col>
-                {exp.startDate &&  (
-                    <Col xs={4} style={{textAlign: 'right',}}>{exp.startDate} - {exp.endDate} </Col>
-                )}
-            </Row>
+                <Row style={styles.expJobItemHead}>
+                    <Col xs={4} style={{textAlign: 'left',}}>{exp.title} </Col>
+                    <Col xs={4} style={{textAlign: 'center',}}>{exp.company}</Col>
+                    {exp.startDate &&  (
+                        <Col xs={4} style={{textAlign: 'right',}}>{exp.startDate} - {exp.endDate} </Col>
+                    )}
+                </Row>
             </Container>
 
             <div>{exp.summary}</div>
