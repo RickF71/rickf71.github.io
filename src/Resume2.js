@@ -12,12 +12,32 @@ const styles = {
         color: 'white',
         paddingLeft:0,
         paddingRight:0,
-        paddingBottom:'0.5em',
+        paddingBottom:'0.5rem',
     },
     summarySection: {
         backgroundColor:'#454545',
-        fontSize: '1.5em',
-        padding:'0.25em',
+        fontSize: '1.5rem',
+        padding:'0.25rem',
+        paddingLeft: '1rem',
+        marginTop: '1rem',
+        textShadow: '1px 1px 0 #fff, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #fff;',
+    },
+    summarySection2: {
+        fontSize: '1rem',
+        paddingLeft: '1rem',
+        marginTop: '1rem',
+        marginBottom: '0rem',
+        paddingBottom: 0,
+        textAlign:'center',
+        textShadow: '1px 1px 0 #fff, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #fff;',
+    },
+    summarySection3: {
+        fontSize: '1.25rem',
+        fontWeight: 'bold',
+        padding:'0.25rem',
+        textAlign:'center',
+        marginTop: '0rem',
+        paddingTop: 0,
         textShadow: '1px 1px 0 #fff, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #fff;',
     },
     experience: {
@@ -105,26 +125,25 @@ export const Resume2 = () => {
             // <ThemeProvider>
                 <Container fluid className='resume' style={{marginRight: 0, marginLeft:0, width: '100%'}}>
                     <Row style={{}}>
-                        <Col xs={3} style={styles.summary}>
-                            <div style={styles.summarySection}>Richard Fleischman</div>
-                            <div>Full Stack Programmer</div>
+                        <Col xs={12} sm={3} style={styles.summary}>
+                            <div style={{textAlign: 'center', fontSize:'2rem'}}>Richard Fleischman</div>
+                            <div style={{textAlign: 'center', fontSize:'1.2rem'}}>Full Stack Programmer</div>
 
                             <div style={styles.summarySection}>Personal Info</div>
                             <div style={styles.summarySection2}>Phone</div>
-                            <div>414-275-0161</div>
+                            <div style={styles.summarySection3}>414-275-0161</div>
                             <div style={styles.summarySection2}>Email</div>
-                            <div>rickf71@gmail.com</div>
-                            <div style={styles.summarySection2}>LinkedIn</div>
-                            <Button href='https://www.linkedin.com/in/rickfleischman/'>LinkedIn</Button>
-                            <div style={styles.summarySection2}>WWW</div>
-                            <Button href='https://rickf71.github.io/'>Github</Button>
+                            <div style={styles.summarySection3}>rickf71@gmail.com</div>
+                            <div style={styles.summarySection2}>External Links</div>
+                            <Button className="d-grid gap-2" size="sm" href='https://www.linkedin.com/in/rickfleischman/'>https://www.linkedin.com/in/rickfleischman/</Button>
+                            <Button className="d-grid gap-2"  size="sm" href='https://rickf71.github.io/'>https://rickf71.github.io/</Button>
 
 
                             <div style={styles.summarySection}>Specific Skills</div>
                             
 
                         </Col>
-                        <Col xs={9}  style={styles.experience}>
+                        <Col xs={12} sm={9} style={styles.experience}>
                             <div style={styles.expTitle}>Skill Overview</div>
 
                             <div style={styles.expJobItem}>
