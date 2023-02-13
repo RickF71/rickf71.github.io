@@ -21,7 +21,7 @@ const Navmain = () => (
   // <ThemeProvider theme={theme}>
     <Navbar bg="dark" fg="light" expand="md" variant="dark">
       <Container className="App">
-        <NavbarBrand to="/">Richard Fleischman</NavbarBrand>
+        <NavbarBrand to="/">Richard Fleischman 2</NavbarBrand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse>
           <Nav className="mr-auto">
