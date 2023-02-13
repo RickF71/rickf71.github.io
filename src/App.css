@@ -55,8 +55,4 @@ div.card-body {
   background-color: #c6b3ab; 
 }
 
-@media print {
-  .navbar {
-    display: none !important;
-  }
-}
+
