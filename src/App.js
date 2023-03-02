@@ -41,7 +41,7 @@ function App() {
   return (
     <Router>
         <Navmain />
-        <Routes>
+        <Routes> 
         <Route path="/" element={ <Home/> } />
         <Route path="/resume" element={ <Resume/> } />
         <Route path="/resume2" element={ <Resume2/> } />

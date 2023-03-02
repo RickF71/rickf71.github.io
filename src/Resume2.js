@@ -103,7 +103,7 @@ function Exp({ exp }) {
               {exp.expTags && (
                 exp.expTags.map((name, key) => (
                     <span key={key} bg='secondary' style={styles.expTag}>
-                        {name}
+                        {name + ' '}
                     </span>
                 )))}
             </div> 
@@ -125,7 +125,7 @@ export const Resume2 = () => {
             // <ThemeProvider>
                 <Container fluid className='resume' style={{marginRight: 0, marginLeft:0, width: '100%'}}>
                     <Row style={{}}>
-                        <Col xs={12} sm={3} style={styles.summary}>
+                        <Col sm={12} md={3} style={styles.summary}>
                             <div style={{textAlign: 'center', fontSize:'2rem'}}>Richard Fleischman</div>
                             <div style={{textAlign: 'center', fontSize:'1.2rem'}}>Full Stack Programmer</div>
 
@@ -135,15 +135,15 @@ export const Resume2 = () => {
                             <div style={styles.summarySection2}>Email</div>
                             <div style={styles.summarySection3}>rickf71@gmail.com</div>
                             <div style={styles.summarySection2}>External Links</div>
-                            <Button className="d-grid gap-2" size="sm" href='https://www.linkedin.com/in/rickfleischman/'>https://www.linkedin.com/in/rickfleischman/</Button>
-                            <Button className="d-grid gap-2"  size="sm" href='https://rickf71.github.io/'>https://rickf71.github.io/</Button>
+                            <Button className="d-grid" style={{marginBottom: '.2rem'}} variant="outline-warning" size="sm" href='https://www.linkedin.com/in/rickfleischman/'>https://www.linkedin.com/in/rickfleischman/</Button>
+                            <Button className="d-grid" variant="outline-warning" size="sm" href='https://rickf71.github.io/'>https://rickf71.github.io/</Button>
 
 
                             <div style={styles.summarySection}>Specific Skills</div>
                             
 
                         </Col>
-                        <Col xs={12} sm={9} style={styles.experience}>
+                        <Col sm={12} md={9} style={styles.experience}>
                             <div style={styles.expTitle}>Skill Overview</div>
 
                             <div style={styles.expJobItem}>
