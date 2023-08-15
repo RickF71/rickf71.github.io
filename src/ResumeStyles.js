@@ -45,7 +45,7 @@ export const styles = {
         fontSize:'2rem',
         color: 'black',
         fontWeight: 'bold',
-        background: "linear-gradient(0deg, #88a, #c09f80 .5rem)",
+        // background: "linear-gradient(0deg, #88a, #c09f80 .5rem)",
         borderTopLeftRadius: '.5rem', 
         borderTopRightRadius: '.5rem', 
         border:'1rem',
@@ -53,11 +53,11 @@ export const styles = {
     }, 
     expJobItem: {
         backgroundColor: '#76323f', 
-        background: "linear-gradient(180deg, #88a, #d7ced7 5rem)",
-        borderLeft: '5px solid #88a',
+        background: "#888",
+        // borderLeft: '5px solid #88a',
         fontSize: '1em',
-        marginBottom: '.5rem',
-        paddingLeft: '0.5rem',
+        marginBottom: '1rem',
+        padding: '6px',
     },
     expJobItemHead: {
         fontSize: '1.1em',
@@ -66,12 +66,14 @@ export const styles = {
     expTag: {
         borderColor: "black", 
         marginRight:'.25rem',  
-        paddingLeft: '.2rem',
+        paddingLeft: '.4rem',
         paddingRight: '.2rem',
+        paddingBottom: '.1rem',
         fontSize:'0.9rem',
-        background: "linear-gradient(0deg, #aaa, #d7ced7 1.25rem)",
-        border: '1px solid #565656',
-        borderRadius: '.5rem', 
+        background: "#BCD7F8",
+        // border: '1px solid #565656',
+        borderRadius: '1rem', 
+        textShadow: '1px 1px 3px rgba(0,0,0,0.5)',
     },
 
   };

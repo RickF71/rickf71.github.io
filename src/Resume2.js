@@ -32,7 +32,7 @@ function Exp({ exp }) {
 
             <ListGroup style={{ paddingTop: '.5rem'}}>
             {exp.experience.map((expItem) => (
-                <ListGroup.Item as="li" style={{ padding: "0.0rem 0.2rem", marginLeft: "0.25rem" }}>{expItem.description}</ListGroup.Item>
+                <ListGroup.Item as="li" style={{ padding: "0.0rem 0.2rem"}}>{expItem.description}</ListGroup.Item>
             ))}
             </ListGroup>
         </div>
@@ -83,6 +83,7 @@ export const Resume2 = () => {
                             </div>
 
                             <div style={styles.expTitle}>Experience</div>
+
                             {resumeExperience.map((exp) => (    
                                 <Exp exp={exp} />
                             ))}
