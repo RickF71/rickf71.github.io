@@ -42,12 +42,12 @@ function App() {
     <Router>
         <Navmain />
         <Routes> 
-        <Route path="/" element={ <Home/> } />
-        <Route path="/resume" element={ <Resume/> } />
-        <Route path="/resume2" element={ <Resume2/> } />
-        <Route path="/examples" element={ <Examples/> } />
-        <Route path="/about" element={ <About/> } />
-        <Route path="/contact" element={ <Contact/> } />
+          <Route path="/" element={ <Home/> } />
+          <Route path="/resume" element={ <Resume/> } />
+          <Route path="/resume2" element={ <Resume2/> } />
+          <Route path="/examples" element={ <Examples/> } />
+          <Route path="/about" element={ <About/> } />
+          <Route path="/contact" element={ <Contact/> } />
         </Routes>
     </Router>
   );
