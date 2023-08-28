@@ -12,14 +12,13 @@ export const Home = () => {
                     In addition I've worked with many different database systems.
                 </p>
                 <p>
-                    <p>Written with several technologies</p>
-
-                    <ul>
-                        <li>React 18.2.0</li>
-                        <li>Bootstrap 5.2</li>
-                        <li>react-bootstrap v2.7.0</li>
-                    </ul>
+                    Written with several technologies
                 </p>
+                <ul>
+                    <li>React 18.2.0</li>
+                    <li>Bootstrap 5.2</li>
+                    <li>react-bootstrap v2.7.0</li>
+                </ul>
             </Container>
 
 

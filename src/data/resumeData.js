@@ -108,7 +108,7 @@ export const resumeExperience = [
     startDate: 'February 2022',
     endDate: 'May 2022',
     summary: 'Full-stack returnship program',
-    expTags: ['React','Agile','Microsoft Teams', 'Jira','HTML',"CSS",'Javascript','Bootstrap'],
+    expTags: ['React','Agile','Teams', 'Jira','HTML',"CSS",'Javascript','Bootstrap'],
     experience: [
         {description: 'Instruction on HTML, CSS and Javascript'},
         {description: 'Learning how to program using React, including JSX'},
@@ -136,9 +136,9 @@ export const resumeExperience = [
     summary: 'Various experience.  Programming, database entry, accounting work for various companies and persons. ',
     expTags: ['PHP','MySQL','LAMP','jQuery','Bootstrap', 'PHPBB', 'VMWare'],
     experience: [
-        {description: 'Set up and create code for www.TheFileStop.com (Dec 2016 - Dec 2017)'},
-        {description: 'PHP, MySQL, LAMP Server, jQuery / jQuery-UI, Bootstrap v4, Authentication System'},
-        {description: 'Set up and create code for www.LateNightSoftware.net'},
+        {description: 'Set up and create code for www.TheFileStop.com (Dec 2016 - Dec 2017)', expTags: ['WebSite']},
+        {description: 'PHP, MySQL, LAMP Server, jQuery / jQuery-UI, Bootstrap v4, Authentication System', expTags: ['PHP','MySQL','LAMP','jQuery','Bootstrap', 'Authentication']},
+        {description: 'Set up and create code for www.LateNightSoftware.net', expTags: ['WebSite']},
         {description: 'PHP, MySQL, LAMP Server, jQuery, Bootstrap 3, Authentication, Custom chat rooms, PHPBB3 Install'},
         {description: 'Set up full LAMP server in a VMWare Virtual machine'},
         {description: 'Network Administration'},
