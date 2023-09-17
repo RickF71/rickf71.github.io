@@ -27,6 +27,7 @@ function App() {
   };
 
   return (
+    <>
     <Router>
       <Navbar bg="dark" fg="light" expand="md" variant="dark">
         <Container className="App">
@@ -51,6 +52,12 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
+    <Router>
+      <Routes>
+        <Route path="/examples" element={<Examples />} />
+      </Routes>
+    </Router>
+    </>
   );
 }
 
