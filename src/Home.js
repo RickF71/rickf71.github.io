@@ -21,7 +21,7 @@ export const Home = () => {
         <Row>
           <Col 
               xs={4} 
-              style={{border: '4px solid #9AB4AD', 
+              style={{border: '4px solid #FFB84E', 
                   borderRadius:'6px', 
                   lineHeight:'2rem', 
                   paddingTop: '1em',
@@ -46,39 +46,39 @@ export const Home = () => {
             <Row className="d-flex align-items-center">
               <Col xs={4}><img src={ReactLogo} alt="React Logo" style={{width: '100%', height: 'auto'}} /></Col>
               <Col xs={8}>
-                <div style={{fontSize: '4rem'}}>React</div>
-                <div style={{fontSize: '1.5rem'}}>A popular JavaScript libraries for building user interfaces, I have used React as a front end interface library for several projects.</div>
+                <div style={{fontSize: '3rem'}}>React</div>
+                <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>A popular JavaScript libraries for building user interfaces, I have used React as a front end interface library for several projects.</div>
                 <Row>
                   <Col>JavaScript</Col>
                   <Col>Node.js</Col>
                 </Row>
               </Col>
             </Row>
-            <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#9AB4AD', borderWidth: '2px'}} /></Col></Row>
+            <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
             <Row className="d-flex align-items-center">
               <Col xs={8}>
-                <div style={{fontSize: '4rem'}}>Java</div>
-                <div style={{fontSize: '1.5rem'}}>
+                <div style={{fontSize: '3rem'}}>Java</div>
+                <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>
                   <div>Java is well established and is widely used in Enterprise Computer Programming.</div>
                   <div>I have experience on a team using Java to create microservice back end for a React front end. Utilized Spring Boot and intefaced with a DyanmoDB database.</div>
                 </div>
               </Col>
               <Col xs={4}><img src={JavaLogo} alt="Java Logo" style={{width: '100%', height: 'auto'}} /></Col>
             </Row>
-            <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#9AB4AD', borderWidth: '2px'}} /></Col></Row>
+            <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
             <Row className="d-flex align-items-center">
               <Col xs={4}><img src={PHPLogo} alt="PHP Logo" style={{width: '100%', height: 'auto'}} /></Col>
               <Col xs={8}>
-                <div style={{fontSize: '4rem'}}>PHP</div>
-                <div style={{fontSize: '1.5rem'}}>
+                <div style={{fontSize: '3rem'}}>PHP</div>
+                <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>
                   <div>PHP was my first web scripting language.  I had a bit of experience with Microsoft ASP before that, but PHP is where I initially developed my Web Programming skills.</div>
                 </div>
               </Col>
             </Row>
           </Col>
         </Row>
-        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#9AB4AD', borderWidth: '2px'}} /></Col></Row>
-        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#9AB4AD', borderWidth: '2px'}} /></Col></Row>
+        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
+        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
 
       </Container>
     )
