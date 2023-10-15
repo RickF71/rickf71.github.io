@@ -103,7 +103,7 @@ export const resumeHeader = `
 
 export const resumeExperience = [
 {
-    title: 'MARS Returnship',
+    title: 'Full Stack Developer',
     company: 'MARS Solutions Group',
     startDate: 'February 2022',
     endDate: 'Current',

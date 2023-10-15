@@ -11,13 +11,13 @@ function Exp({ exp }) {
         <div className='exp-job-item' style={{paddingBottom: '1em'}}>
             <Container className='exp-job-item-head'>
                 <Row>
-                    <Col xs={6} className='d-flex align-items-center' style={{textAlign: 'left', fontSize: '2rem'}}>
+                    <Col className='d-flex align-items-center' style={{textAlign: 'left', fontSize: '1.5rem'}}>
                         {exp.title} 
                     </Col>
-                    <Col xs={6}>
-                        <Row xs={4} style={{textAlign: 'center',}}>{exp.company}</Row>
+                    <Col className='' >
+                        <Row style={{textAlign: 'center',}}>{exp.company}</Row>
                         {exp.startDate &&  (
-                            <Row xs={4} style={{textAlign: 'right',}}>{exp.startDate} - {exp.endDate} </Row>
+                            <Row style={{textAlign: 'right',}}>{exp.startDate} - {exp.endDate} </Row>
                         )}
                     </Col>
                 </Row>
