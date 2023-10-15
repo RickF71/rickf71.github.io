@@ -30,7 +30,7 @@ function App() {
     <>
     <Router>
       <Navbar bg="dark" fg="light" expand="md" variant="dark">
-        <Container className="App">
+        <Container className="d-flex justify-content-center App">
           <NavbarBrand to="/">Richard Fleischman</NavbarBrand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse>
@@ -44,6 +44,7 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
@@ -52,11 +53,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
-    <Router>
+    {/* <Router>
       <Routes>
         <Route path="/examples" element={<Examples />} />
       </Routes>
-    </Router>
+    </Router> */}
     </>
   );
 }
