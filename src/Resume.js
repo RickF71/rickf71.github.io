@@ -22,22 +22,22 @@ function Exp({ exp }) {
                     </Col>
                 </Row>
 
-            <div style={{fontStyle: 'italic'}}>{exp.summary}</div>
-          
-            <div>
-              {exp.expTags && (
-                exp.expTags.map((name, key) => (
-                    <span key={key} bg='secondary' className='expTag'>
-                        {name + ' '}
-                    </span>
-                )))}
-            </div> 
+                <Row style={{fontStyle: 'italic'}}>{exp.summary}</Row>
+            
 
-            <ListGroup style={{ paddingTop: '.5rem'}}>
-            {exp.experience.map((expItem) => (
-                <ListGroup.Item as="li" style={{ padding: "0.0rem 0.2rem"}}>{expItem.description}</ListGroup.Item>
-            ))}
-            </ListGroup>
+                {exp.expTags && (
+                    exp.expTags.map((name, key) => (
+                        <span key={key} bg='secondary' className='expTag'>
+                            {name + ' '}
+                        </span>
+                    )))}
+
+
+                <ListGroup style={{ paddingTop: '.5rem'}}>
+                    {exp.experience.map((expItem) => (
+                        <ListGroup.Item as="li" style={{ padding: "0.0rem 0.2rem"}}>{expItem.description}</ListGroup.Item>
+                    ))}
+                </ListGroup>
             </Container>
         </div>
     );

@@ -47,7 +47,7 @@ export const Home = () => {
               <Col xs={4}><img src={ReactLogo} alt="React Logo" style={{width: '100%', height: 'auto'}} /></Col>
               <Col xs={8}>
                 <div style={{fontSize: '3rem'}}>React</div>
-                <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>A popular JavaScript libraries for building user interfaces, I have used React as a front end interface library for several projects.</div>
+                <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>A popular JavaScript library for building user interfaces, I have used React as a front end interface library for several projects.</div>
                 <Row>
                   <Col>JavaScript</Col>
                   <Col>Node.js</Col>
