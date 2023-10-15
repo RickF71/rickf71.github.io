@@ -8,18 +8,21 @@ import './Resume.css'
 
 function Exp({ exp }) {
     return (
-        <div className='exp-job-item'>
+        <div className='exp-job-item' style={{paddingBottom: '1em'}}>
             <Container className='exp-job-item-head'>
                 <Row>
-                    <Col xs={4} style={{textAlign: 'left',}}>{exp.title} </Col>
-                    <Col xs={4} style={{textAlign: 'center',}}>{exp.company}</Col>
-                    {exp.startDate &&  (
-                        <Col xs={4} style={{textAlign: 'right',}}>{exp.startDate} - {exp.endDate} </Col>
-                    )}
+                    <Col xs={6} className='d-flex align-items-center' style={{textAlign: 'left', fontSize: '2rem'}}>
+                        {exp.title} 
+                    </Col>
+                    <Col xs={6}>
+                        <Row xs={4} style={{textAlign: 'center',}}>{exp.company}</Row>
+                        {exp.startDate &&  (
+                            <Row xs={4} style={{textAlign: 'right',}}>{exp.startDate} - {exp.endDate} </Row>
+                        )}
+                    </Col>
                 </Row>
-            </Container>
 
-            <div>{exp.summary}</div>
+            <div style={{fontStyle: 'italic'}}>{exp.summary}</div>
           
             <div>
               {exp.expTags && (
@@ -35,6 +38,7 @@ function Exp({ exp }) {
                 <ListGroup.Item as="li" style={{ padding: "0.0rem 0.2rem"}}>{expItem.description}</ListGroup.Item>
             ))}
             </ListGroup>
+            </Container>
         </div>
     );
 }
@@ -42,56 +46,52 @@ function Exp({ exp }) {
 
 export const Resume = () => {
     return (
-        <>
-            { true && (
-            // <ThemeProvider>
-                <Container fluid className='resume' style={{marginRight: 0, marginLeft:0, width: '100%'}}>
-                    <Row style={{}}>
-                        <Col sm={12} md={9}>
-                            <div>Skill Overview</div>
-
-                            <div>
-                                <div>Front End</div>
-                                <div style={{paddingLeft: '.5rem'}}>HTML, CSS, Javascript, React, jQuery, Bootstrap</div>
-
-                                <div className='exp-job-item-head'>Programming</div>
-                                <div style={{paddingLeft: '.5rem'}}>PHP, Javascript, ASP, Ruby On Rails, C++, C, Python, Authentication, Troubleshooting, Creating Documentation</div>
-                                
-                                <div className='exp-job-item-head'>Database</div>
-                                <div style={{paddingLeft: '.5rem'}}>MySQL, SQL Server, Microsoft Access, IBM DB2 (other SQL based DBs)</div>
-
-                                <div className='exp-job-item-head'>Back End</div>
-                                <div style={{paddingLeft: '.5rem'}}>Apache, Windows Server, LAMP, VMWare, Unix/Linux, OSs in general</div>
-                            </div>
-
-                            <div className='exp-title'>Experience</div>
-                            {resumeExperience.map((exp) => (    
-                                <Exp exp={exp} />
-                            ))}
-                        </Col>
-<Col sm={12} md={3} className='summary'>
-                            <div style={{textAlign: 'center', fontSize:'2rem'}}>Richard Fleischman</div>
-                            <div style={{textAlign: 'center', fontSize:'1.2rem'}}>Full Stack Programmer</div>
-
-                            <div className='summary-section'>Personal Info</div>
-                            <div>Phone</div>
-                            <div>414-275-0161</div>
-                            <div>Email</div>
-                            <div>rickf71@gmail.com</div>
-                            <div>External Links</div>
-                            <Button className="d-grid" style={{marginBottom: '.2rem'}} variant="outline-warning" size="sm" href='https://www.linkedin.com/in/rickfleischman/'>https://www.linkedin.com/in/rickfleischman/</Button>
-                            <Button className="d-grid" variant="outline-warning" size="sm" href='https://rickf71.github.io/'>https://rickf71.github.io/</Button>
+        <div className='d-flex justify-content-center' style={{}}>
+            <Container className='resume d-flex justify-content-center' style={{marginRight: 0, marginLeft:0, width: '100%', }}>
+                <Row style={{}}>
+                    <Col sm={12} md={4} className='summary'>
+                        <Row style={{textAlign: 'center', fontSize:'2rem'}}>Richard Fleischman</Row>
+                        <Row style={{textAlign: 'center', fontSize:'1.2rem'}}>Full Stack Programmer</Row>
+                        <Row style={{textAlign: 'center', fontSize:'1.2rem'}}>Milwaukee, WI</Row>
+                        <div>Phone</div>
+                        <div>414-275-0161</div>
+                        <div>Email</div>
+                        <div>rickf71@gmail.com</div>
+                        <div>External Links</div>
+                        <Button className="d-grid" variant="primary" size="sm" href='https://www.linkedin.com/in/rickfleischman/'>LinkedIn</Button><br />
+                        <Button className="d-grid" variant="primary" size="sm" href='https://rickf71.github.io/'>GitHub</Button>
 
 
-                            <div>Specific Skills</div>
+                        <br /><br />
+
+                        <div style={{fontSize:'1.5rem', fontWeight:'bold'}}>Skill Overview</div>
+
+                        <div>
+                            <div>Front End</div>
+                            <div style={{paddingLeft: '.5rem'}}>HTML, CSS, Javascript, React, jQuery, Bootstrap</div>
+
+                            <div className='exp-job-item-head'>Programming</div>
+                            <div style={{paddingLeft: '.5rem'}}>PHP, Javascript, ASP, Ruby On Rails, C++, C, Python, Authentication, Troubleshooting, Creating Documentation</div>
                             
+                            <div className='exp-job-item-head'>Database</div>
+                            <div style={{paddingLeft: '.5rem'}}>MySQL, SQL Server, Microsoft Access, IBM DB2 (other SQL based DBs)</div>
 
-                        </Col>
-                    </Row>
-                </Container>
-            // </ThemeProvider>
-            )}
-        </>
+                            <div className='exp-job-item-head'>Back End</div>
+                            <div style={{paddingLeft: '.5rem'}}>Apache, Windows Server, LAMP, VMWare, Unix/Linux, OSs in general</div>
+                        </div>
+
+                        <div className='exp-title'>Experience</div>
+                    </Col>
+                    <Col sm={12} md={8}>
+
+                        {resumeExperience.map((exp) => (    
+                            <Exp exp={exp} />
+                        ))}
+                    </Col>
+
+                </Row>
+            </Container>
+        </div>
     )
 };
   

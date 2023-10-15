@@ -106,7 +106,7 @@ export const resumeExperience = [
     title: 'MARS Returnship',
     company: 'MARS Solutions Group',
     startDate: 'February 2022',
-    endDate: 'May 2022',
+    endDate: 'Current',
     summary: 'Full-stack returnship program',
     expTags: ['React','Agile','Teams', 'Jira','HTML',"CSS",'Javascript','Bootstrap'],
     experience: [
@@ -120,8 +120,8 @@ export const resumeExperience = [
 {
     title: 'Full Stack Instructor',
     company: 'Ancora Education',
-    start: 'August 2019',
-    end: 'October 2019',
+    startDate: 'August 2019',
+    endDate: 'October 2019',
     summary: 'Instructor for class of Amazon Employees',
     expTags: ['HTML',"CSS",'Javascript'],
     experience: [
