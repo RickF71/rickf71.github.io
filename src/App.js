@@ -29,9 +29,9 @@ function App() {
   return (
     <>
     <Router>
-      <Navbar bg="dark" fg="light" expand="md" variant="dark">
+      <Navbar fg="dark" expand="md" variant="light" style={{backgroundColor:'#9AB4AD'}}>
         <Container className="d-flex justify-content-center App">
-          <NavbarBrand to="/">Richard Fleischman</NavbarBrand>
+          <NavbarBrand to="/" style={{fontSize:'2em', paddingRight:'1em', borderRight:'2px solid black'}}>Richard Fleischman</NavbarBrand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse>
             <Nav className="mr-auto">
