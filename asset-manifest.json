@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c1c5271.css",
-    "main.js": "/static/js/main.4b8e8ee3.js",
+    "main.css": "/static/css/main.63c0b9a6.css",
+    "main.js": "/static/js/main.cf5d5732.js",
     "static/js/787.4fd517d6.chunk.js": "/static/js/787.4fd517d6.chunk.js",
     "static/media/rick-no-glasses-no-bg.jpg": "/static/media/rick-no-glasses-no-bg.4e6b93378054a0a64e4d.jpg",
     "static/media/react-logo-1.png": "/static/media/react-logo-1.8a6fc0a24a800d1e0f4a.png",
@@ -9,12 +9,12 @@
     "static/media/java-logo-1.png": "/static/media/java-logo-1.fdabd4e11f1235e4e8e0.png",
     "static/media/php-logo-1.png": "/static/media/php-logo-1.842ef02b41f2b4a40201.png",
     "index.html": "/index.html",
-    "main.5c1c5271.css.map": "/static/css/main.5c1c5271.css.map",
-    "main.4b8e8ee3.js.map": "/static/js/main.4b8e8ee3.js.map",
+    "main.63c0b9a6.css.map": "/static/css/main.63c0b9a6.css.map",
+    "main.cf5d5732.js.map": "/static/js/main.cf5d5732.js.map",
     "787.4fd517d6.chunk.js.map": "/static/js/787.4fd517d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c1c5271.css",
-    "static/js/main.4b8e8ee3.js"
+    "static/css/main.63c0b9a6.css",
+    "static/js/main.cf5d5732.js"
   ]
 }
