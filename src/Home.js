@@ -2,10 +2,12 @@ import React from 'react'
 import { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ReactShort from './data/react-short2.png'
-import RickNoBG from './images/rick-no-glasses-no-bg.jpg'
+import RickNoBG from './images/rick-no-glasses-no-bg-sm.png'
 import ReactLogo from './images/react-logo-1.png'
 import JavaLogo from './images/java-logo-1.png'
 import PHPLogo from './images/php-logo-1.png'
+import JSLogo from './images/logo-javascript-transparent.png'
+import NodeJSLogo from './images/logo-nodejs.svg'
 
 export const Home = () => {
     const [index, setIndex] = useState(0);
@@ -49,8 +51,9 @@ export const Home = () => {
                 <div style={{fontSize: '3rem'}}>React</div>
                 <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>A popular JavaScript library for building user interfaces, I have used React as a front end interface library for several projects.</div>
                 <Row>
-                  <Col>JavaScript</Col>
-                  <Col>Node.js</Col>
+                  <Col xs={1}></Col>
+                  <Col><img src={JSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
+                  <Col><img src={NodeJSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
                 </Row>
               </Col>
             </Row>

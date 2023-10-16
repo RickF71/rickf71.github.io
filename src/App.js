@@ -44,7 +44,7 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+      <div style={{height: '1em'}}></div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
