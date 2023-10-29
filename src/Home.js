@@ -7,6 +7,10 @@ import ReactLogo from './images/react-logo-1.png'
 import JavaLogo from './images/java-logo-1.png'
 import PHPLogo from './images/php-logo-1.png'
 import JSLogo from './images/logo-javascript-transparent.png'
+import FigmaLogo from './images/figma-logo-1.png'
+import InkscapeLogo from './images/inkscape-logo-1.png'
+import AudacityLogo from './images/audacity-logo-1.jpg'
+
 import NodeJSLogo from './images/logo-nodejs.svg'
 
 export const Home = () => {
@@ -49,7 +53,7 @@ export const Home = () => {
               <Col xs={4}><img src={ReactLogo} alt="React Logo" style={{width: '100%', height: 'auto'}} /></Col>
               <Col xs={8}>
                 <div style={{fontSize: '3rem'}}>React</div>
-                <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>A popular JavaScript library for building user interfaces, I have used React as a front end interface library for several projects.</div>
+                <div style={{fontSize: '1.5rem', lineHeight: '1.6rem', paddingBottom: '1rem'}}>A popular JavaScript library for building user interfaces, I have used React as a front end interface library for several projects.</div>
                 <Row>
                   <Col xs={1}></Col>
                   <Col><img src={JSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
@@ -78,6 +82,25 @@ export const Home = () => {
                 </div>
               </Col>
             </Row>
+          </Col>
+        </Row>
+        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#356', borderWidth: '5px'}} /></Col></Row>
+
+        <Row>
+          <Col xs={4} style={{textAlign:'center'}}>
+            <h1>Figma</h1>
+            <img src={FigmaLogo} alt="Figma Logo" style={{width: '50%', height: 'auto'}} />
+            <div>Great design tool for creating wireframes.</div>
+          </Col>
+          <Col xs={4} style={{textAlign:'center'}}> 
+            <h1>Inkscape</h1>
+            <img src={InkscapeLogo} alt="Inkscape Logo" style={{width: '50%', height: 'auto'}} />
+            <div>Audacity is an audio editor that I've used to help produce higher quality audio quotes.  </div>
+          </Col>
+          <Col xs={4} style={{textAlign:'center'}}> 
+            <h1>Audacity</h1>
+            <img src={AudacityLogo} alt="Audacity Logo" style={{width: '50%', height: 'auto'}} />
+            <div>Audacity is an audio editor that I've used to help produce higher quality audio quotes.  </div>
           </Col>
         </Row>
         <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>

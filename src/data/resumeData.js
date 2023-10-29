@@ -82,7 +82,7 @@ export const resumeHeader = `
 
                     </p>
 
-                    <p>Richard enjoys collaborating with others and has a great ability to troubleshoot problems. 
+                    <p>Enjoy collaborating on a team and has a great ability to troubleshoot problems. 
                     It's a great thing for me to hear other people's challenges and work together and fix the issues 
                     that might be causing any problems.</p>
                     <p>

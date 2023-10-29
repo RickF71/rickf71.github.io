@@ -58,7 +58,7 @@ export const Resume = () => {
                         <div>Email</div>
                         <div>rickf71@gmail.com</div>
                         <div>External Links</div>
-                        <Button className="d-grid" variant="primary" size="sm" href='https://www.linkedin.com/in/rickfleischman/'>LinkedIn</Button><br />
+                        <Button className="d-grid" variant="primary" size="sm" style={{marginBottom:'.2rem'}} href='https://www.linkedin.com/in/rickfleischman/'>LinkedIn</Button>
                         <Button className="d-grid" variant="primary" size="sm" href='https://rickf71.github.io/'>GitHub</Button>
 
 
