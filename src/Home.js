@@ -3,13 +3,17 @@ import { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ReactShort from './data/react-short2.png'
 import RickNoBG from './images/rick-no-glasses-no-bg-sm.png'
+
 import ReactLogo from './images/react-logo-1.png'
 import JavaLogo from './images/java-logo-1.png'
 import PHPLogo from './images/php-logo-1.png'
 import JSLogo from './images/logo-javascript-transparent.png'
 import FigmaLogo from './images/figma-logo-1.png'
+import PostmanLogo from './images/postman-logo-1.png'
+import JiraLogo from './images/png-jira-1.png'
 import InkscapeLogo from './images/inkscape-logo-1.png'
 import AudacityLogo from './images/audacity-logo-1.jpg'
+import GimpLogo from './images/gimp-logo-1.pngy'
 
 import NodeJSLogo from './images/logo-nodejs.svg'
 
@@ -90,20 +94,46 @@ export const Home = () => {
           <Col xs={4} style={{textAlign:'center'}}>
             <h1>Figma</h1>
             <img src={FigmaLogo} alt="Figma Logo" style={{width: '50%', height: 'auto'}} />
-            <div>Great design tool for creating wireframes.</div>
+            <div>Figma is a collaborative design platform that allows users to create, share, and test designs for websites, apps, and other digital products and experiences.</div>
+            <br />
+            <div>Figma is used by designers, product managers, and developers of all kinds to create wireframes, mockups, prototypes, and final designs. </div>
           </Col>
           <Col xs={4} style={{textAlign:'center'}}> 
+            <h1>Postman</h1>
+            <img src={PostmanLogo} alt="Postman Logo" style={{width: '50%', height: 'auto'}} />
+            <div>Postman is an API platform for building and using APIs. I've used it to test backend APIs.</div>
+            <br />
+            <div>Used by developers, QA engineers, and product managers to design, test, document, and monitor APIs.</div>
+          </Col>
+          <Col xs={4} style={{textAlign:'center'}}> 
+            <h1>Jira</h1>
+            <img src={JiraLogo} alt="Jira Logo" style={{width: '50%', height: 'auto'}} />
+            <div>Jira is a popular issue tracking software that helps teams to manage their work and track their progress.</div>
+            <br />
+            <div>Used by software development teams, IT teams, and other teams to track bugs, tasks, and other work items.</div>
+          </Col>
+        </Row>
+        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
+        <Row>
+        <Col xs={4} style={{textAlign:'center'}}> 
             <h1>Inkscape</h1>
             <img src={InkscapeLogo} alt="Inkscape Logo" style={{width: '50%', height: 'auto'}} />
-            <div>Audacity is an audio editor that I've used to help produce higher quality audio quotes.  </div>
+            <div>Inkscape is a free and open-source vector graphics editor that can be used to create and edit scalable vector graphics (SVGs).</div>
+            <br />
+            <div>Used by graphic designers, web designers, and illustrators to create logos, illustrations, icons, and other vector graphics.</div>
           </Col>
           <Col xs={4} style={{textAlign:'center'}}> 
             <h1>Audacity</h1>
             <img src={AudacityLogo} alt="Audacity Logo" style={{width: '50%', height: 'auto'}} />
             <div>Audacity is an audio editor that I've used to help produce higher quality audio quotes.  </div>
           </Col>
+          <Col xs={4} style={{textAlign:'center'}}> 
+            <h1>Gimp</h1>
+            <img src={GimpLogo} alt="Gimp Logo" style={{width: '50%', height: 'auto'}} />
+            <div>GNU Image Manipulation Program is a photo image processing program, similar in function to Photoshop.</div>
+          </Col>
+          
         </Row>
-        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
         <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
 
       </Container>
