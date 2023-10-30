@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.63c0b9a6.css",
-    "main.js": "/static/js/main.73113769.js",
+    "main.css": "/static/css/main.beb9979e.css",
+    "main.js": "/static/js/main.ebb9d9ca.js",
     "static/js/787.4fd517d6.chunk.js": "/static/js/787.4fd517d6.chunk.js",
     "static/media/inkscape-logo-1.png": "/static/media/inkscape-logo-1.704b8b9313ba201061c1.png",
     "static/media/react-logo-1.png": "/static/media/react-logo-1.8a6fc0a24a800d1e0f4a.png",
+    "static/media/gimp-logo-1.png": "/static/media/gimp-logo-1.c99c6c3fd765b457310f.png",
     "static/media/react-short2.png": "/static/media/react-short2.64d5995ff4c5c2969dad.png",
     "static/media/java-logo-1.png": "/static/media/java-logo-1.fdabd4e11f1235e4e8e0.png",
     "static/media/rick-no-glasses-no-bg-sm.png": "/static/media/rick-no-glasses-no-bg-sm.62ccc1c3bcbc946c628c.png",
     "static/media/logo-javascript-transparent.png": "/static/media/logo-javascript-transparent.dd49336437d9194e4d2d.png",
     "static/media/php-logo-1.png": "/static/media/php-logo-1.842ef02b41f2b4a40201.png",
+    "static/media/png-jira-1.png": "/static/media/png-jira-1.f73d91c6adf3ef463b67.png",
+    "static/media/postman-logo-1.png": "/static/media/postman-logo-1.d4644b8b992bdc7eca2f.png",
     "static/media/logo-nodejs.svg": "/static/media/logo-nodejs.dd47e26ed1d7dddf018e5cbffc40f76d.svg",
     "index.html": "/index.html",
-    "main.63c0b9a6.css.map": "/static/css/main.63c0b9a6.css.map",
-    "main.73113769.js.map": "/static/js/main.73113769.js.map",
+    "main.beb9979e.css.map": "/static/css/main.beb9979e.css.map",
+    "main.ebb9d9ca.js.map": "/static/js/main.ebb9d9ca.js.map",
     "787.4fd517d6.chunk.js.map": "/static/js/787.4fd517d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63c0b9a6.css",
-    "static/js/main.73113769.js"
+    "static/css/main.beb9979e.css",
+    "static/js/main.ebb9d9ca.js"
   ]
 }
