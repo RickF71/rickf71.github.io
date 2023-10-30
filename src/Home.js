@@ -13,7 +13,7 @@ import PostmanLogo from './images/postman-logo-1.png'
 import JiraLogo from './images/png-jira-1.png'
 import InkscapeLogo from './images/inkscape-logo-1.png'
 import AudacityLogo from './images/audacity-logo-1.jpg'
-import GimpLogo from './images/gimp-logo-1.pngy'
+import GimpLogo from './images/gimp-logo-1.png'
 
 import NodeJSLogo from './images/logo-nodejs.svg'
 
@@ -125,12 +125,16 @@ export const Home = () => {
           <Col xs={4} style={{textAlign:'center'}}> 
             <h1>Audacity</h1>
             <img src={AudacityLogo} alt="Audacity Logo" style={{width: '50%', height: 'auto'}} />
-            <div>Audacity is an audio editor that I've used to help produce higher quality audio quotes.  </div>
+            <div>Audacity is a free and open-source audio editing software that can be used to record, edit, and mix audio.</div>
+            <br />
+            <div>Used by musicians, podcasters, and audio engineers to record, edit, and mix music, podcasts, and other audio content.</div>
           </Col>
           <Col xs={4} style={{textAlign:'center'}}> 
             <h1>Gimp</h1>
             <img src={GimpLogo} alt="Gimp Logo" style={{width: '50%', height: 'auto'}} />
-            <div>GNU Image Manipulation Program is a photo image processing program, similar in function to Photoshop.</div>
+            <div>GIMP is a free and open-source raster graphics editor that can be used to create and edit digital images.</div>
+            <br />
+            <div>Used by photographers, graphic designers, and digital artists to create and edit photos, illustrations, and other digital images.similar in function to Photoshop.</div>
           </Col>
           
         </Row>
