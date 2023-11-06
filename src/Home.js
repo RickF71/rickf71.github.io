@@ -49,7 +49,7 @@ export const Home = () => {
               </ul>
             </Row>
             <Row>
-              <img src={RickNoBG} alt="Rick Fleischman" style={{width: '100%', height: 'auto'}} />
+              {/* <img src={RickNoBG} alt="Rick Fleischman" style={{width: '100%', height: 'auto'}} /> */}
             </Row>
           </Col>
           <Col sm={8} flex={1} style={{paddingLeft:'3em', }}>
