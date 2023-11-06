@@ -9,6 +9,10 @@ export const Examples = () => {
                     <Col>
                         <h1>Examples</h1>
                         <p><a href="https://rickf71.github.io/react-code/">React Test Coding Page</a></p>
+
+                        
+
+
                     </Col>
                 </Row>
             </Container>

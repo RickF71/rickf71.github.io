@@ -61,9 +61,9 @@ export const Home = () => {
               </Col>
             </Row>
             <Row>
-                  <Col sm={1}></Col>
-                  <Col><img src={JSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
-                  <Col><img src={NodeJSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
+                  <Col sm={4}></Col>
+                  <Col sm={4}><img src={JSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
+                  <Col sm={4}><img src={NodeJSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
             </Row>
             <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
             <Row className="d-flex align-items-center">
@@ -88,8 +88,8 @@ export const Home = () => {
             </Row>
           </Col>
         </Row>
-        <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '5px'}} /></Col></Row>
-
+        <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '75%', color: '#FFB84E', borderWidth: '5px'}} /></Col></Row>
+        <Row><Col sm={12} className="d-flex justify-content-center" style={{fontSize:'3em',fontWeight:'bold'}} ><div>Other Application Skills</div></Col></Row>
         <Row>
           <Col sm={4} style={{textAlign:'center'}}>
             <h1>Figma</h1>

@@ -1,9 +1,13 @@
-export const resumeHeader = `
-<ThemeProvider theme={theme}>
+import React from 'react';
+import { Container, Row, Col, Button, ThemeProvider} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
+
+export const resumeHeader = () => {
+    return ( 
+        <ThemeProvider>
             <Container className='resume'>
                 <Row>
                     <h1>Richard Fleischman</h1>
-
                     <p>
                         <div>Full Stack Programmer</div>
                         <div>Phone: 414-275-0161  ·  Email: rickf71@gmail.com</div>
@@ -98,8 +102,9 @@ export const resumeHeader = `
                 </Row>
             </Container>
         </ThemeProvider>
+    )
+}
 
-`;
 
 export const resumeExperience = [
 {
@@ -244,6 +249,104 @@ Skills/Tools: PHP, MySQL, SVN, HTML, CSS, Javascript, Unix shell, AJAX`,
     ],
     skillSummary: `Environment: Windows XP, Windows Server 2003, Ubuntu Linux, Fedora Core Linux (2, 6 and 7)
     Skills/Tools: PHP, MySQL, Unix Scripting, VMWare, SENA (RS-232 to Ethernet converter), HTML, Technical Documentation, Test Plan creation Programming focus)`, 
+},
+{
+    title: 'Software Programmer / System Admin',
+    company: 'Blue Moon Mortgage',
+    startDate: 'September 2003',
+    endDate: 'July 2006',
+    expTags: ['PHP','MySQL','HTML','CSS','Javascript','VB6','VBScript','ASP','SQL Server','Microsoft Access'],
+    summary: 'Worked in a variety of roles in a small mortgage company, from programmer to system administation.',
+    experience: [
+        {description: 'Linux, Apache, MySQL, PHP - Worked as the project architect, leader, and developer for a custom web site and integrated intranet, built upon Linux, PHP, MySQL, and Apache.'},
+        {description: 'PDF, PHP, MySQL - Gather and document requirements for custom intranet solutions. This intranet supplied our loan officers with useful reports that were utilized as marketing materials. A PDF generating program designed to work with PHP was used for this purpose.'},
+        {description: 'Setup and configured MySQL database server to integrate with our dynamic website and intranet'},
+        {description: 'Provided integration with 3rd party mortgage origination software for closer integration with our custom built intranet.'},
+        {description: 'Documented code to ease future extensibility.'},
+        {description: 'Windows Server 2003, Exchange 2003, Active Directory - Installed and administered file and email server'},
+        {description: 'Windows XP - Performed maintenance and administration for user computer systems.'},
+        {description: 'Apache, MySQL admin - Set up, configured and secured an in-house web server and database server'},
+    ],
+    skillSummary: `Environment: Windows XP, Windows Server 2003, Linux, MySQL, PHP, Apache, Exchange 2003, Active Directory`,
+},
+{
+    title: 'Software Programmer',
+    company: 'Robert Half International',
+    startDate: 'September 2002',
+    endDate: 'September 2003',
+    expTags: ['MS-Access','Visual Basic','Network Adminstration','VisualBasic.NET', 'Crystal Reports'],
+    summary: '',
+    experience: [
+        {description: 'Access Database - Upgraded, documented, and fixed bugs for a custom built Access database application.'},
+        {description: 'Access Database - Improved security on custom Access database system'},
+        {description: 'Help Desk - Performed help desk and other administrative tasks.'},
+        {description: 'Created custom reports using Crystal Reports'},
+    ],
+    skillSummary: `Environment:  Windows XP | Skills/Tools: Microsoft Access VBA, Visual Basic, Network Administration, Visual Basic.net
+    `,
+},
+{
+    title: 'Software Programmer',
+    company: 'Keane, Inc.',
+    startDate: 'June 2000',
+    endDate: 'Septermber 2001',
+    expTags: [],
+    summary: '',
+    experience: [
+        {description: 'Upgraded a legacy C program designed to run on text-based wireless units.'},
+        {description: 'Met with customers to gather, analyze and document requirements for projects.'},
+        {description: 'Worked on a team to develop a 3-tier Visual Basic application that integrated with an existing Oracle database. Interfaced with and helped develop a DCOM middle tier, along with a user friendly GUI.'},
+        {description: 'Provided support for application post-implementation'},
+    ],
+    skillSummary: `Environment:`,
+},
+{
+    title: 'Software Programmer',
+    company: 'Born Information Services',
+    startDate: 'December 1998',
+    endDate: 'June 2000',
+    expTags: [],
+    summary: '',
+    experience: [
+        {description: 'Created custom Visual Basic application that supplied a user friendly graphical interface as a front end to a warehouse database.'},
+        {description: 'Developed an e-commerce web site for a medical railing company that utilized MS Site Server for the user interface and SQL Server as back end database.'},
+        {description: 'Using ASP and SQL Server, developed an intranet that allowed users to keep track of project information, designed to increase collaboration by creating a discussion forum for each project.'},
+    ],
+    skillSummary: `Windows NT, Visual Basic, MS Site Server/ASP, SQL Server, MS Access`,
+},
+{
+    title: 'Software Programmer',
+    company: 'The Enterprise, Ltd.',
+    startDate: 'May 1995',
+    endDate: 'December 1998',
+    expTags: [],
+    summary: '',
+    experience: [
+        {description: 'Upgraded a 30-hour per week legacy application to run Visual Basic, shortening the job to 4 hours a week with greater accuracy, allowing us to expand operations easier.'},
+        {description: 'Helped custom code and maintain a series of real estate web sites. These sites allowed customer to search online real estate listings, utilizing a custom CGI application running on Slackware Linux.'},
+        {description: 'Converted Linux CGI application to utilize Visual Basic CGI running on windows, and helped extend application beyond its original scope.'},
+        {description: 'Unix/Linux administration, including 3 Linux servers and 1 SGI Irix server, including: New accounts for users (email, user groups, etc), Samba installation and configuration, Apache installation and configuration'},
+        {description: 'With my team, we upgraded the VB-CGI program to use one of the first iterations of Microsoft ASP, including the creation of an ASP based web reporting system.'},
+        {description: 'Telephone & Email support – I spent a lot of time on the telephone with customers, helping them specify development issues relating to their web sites. I developed and instituted several internal systems that we used to track support issues'},
+    ],
+    skillSummary: `Windows NT, Linux, BSD, Windows 3.51, Help Desk, Troubleshooting`,
+},
+{
+    title: 'Software Programmer',
+    company: 'Information Solutions, Inc.',
+    startDate: 'May 1992',
+    endDate: 'May 1995',   
+    expTags: [],
+    summary: '',
+    experience: [
+        {description: 'CAD Hardware/Software – onsite installation and support of high-end PC CAD workstations.'},
+        {description: 'Video and network card configuration. I developed extensive troubleshooting skills while performing on-site installations in a very wide variety of networked environments. This was before Ethernet took over, so many of the network installations were non-standard.'},
+        {description: 'Used 2D and 3D CAD software.'},
+        {description: 'Network Administration, Database Admin - Internally, I maintained the company network that was based on NT 3.1, with several PC clients. As the business expanded I handled upgrades to the network. I also created and maintained a customer support database in MS-Access.'},
+        {description: 'Telephone Support - I did a lot of tech support over the telephone, troubleshooting both hardware and software issues for our wide variety of clients.'},
+    ],
+    skillSummary: `Windows NT, Integraph Workstations | Skills/Tools: Microstation CAD Software, MS-Access, PC Hardware Installation
+    `,
 },
 ];
 

@@ -11,7 +11,7 @@ function Exp({ exp }) {
         <div className='exp-job-item' style={{paddingBottom: '1em'}}>
             <Container className='exp-job-item-head'>
                 <Row>
-                    <Col className='d-flex align-items-center' style={{textAlign: 'left', fontSize: '1.5rem'}}>
+                    <Col className='d-flex align-items-center' style={{textAlign: 'left', fontSize: '1.4rem'}}>
                         {exp.title} 
                     </Col>
                     <Col className='' >
@@ -22,7 +22,7 @@ function Exp({ exp }) {
                     </Col>
                 </Row>
 
-                <Row style={{fontStyle: 'italic'}}>{exp.summary}</Row>
+                <Row style={{fontStyle: 'italic'}}><Col>{exp.summary}</Col></Row>
             
 
                 {exp.expTags && (
@@ -46,7 +46,7 @@ function Exp({ exp }) {
 
 export const Resume = () => {
     return (
-        <div className='d-flex justify-content-center' style={{}}>
+        <div className='justify-content-center' style={{}}>
             <Container className='resume d-flex justify-content-center' style={{marginRight: 0, marginLeft:0, width: '100%', }}>
                 <Row style={{}}>
                     <Col sm={12} md={4} className='summary'>
@@ -89,6 +89,28 @@ export const Resume = () => {
                         ))}
                     </Col>
 
+                </Row>
+
+            </Container>
+            <Container>
+                <Row>
+                    <h3>EDUCATION</h3>
+                    <p>
+                        Milwaukee School Of Engineering (MSOE) - Milwaukee, WI
+                        Major:  Computer Engineering.  
+
+                        Oak Creek Senior High School - Oak Creek, WI
+                    </p>
+                    <h3>KEY SKILLS</h3>
+                    <p>My primary skill is working with data, including various database systems.
+                    Other skills: the LAMP stack (Linux Apache MySQL PHP) with a special focus on creating user interfaces using jQuery and jQuery-UI.
+                    Programming Languages : PHP / Javascript, Java, ASP, C, Visual Basic, Ruby and several others.
+                    Databases : MySQL, MS Access, SQL Server, Oracle
+                    Other: jQuery, Ruby on Rails, VMWare Virtualization
+                    </p>
+                    <h3>CONTACT INFORMATION</h3>
+                    <div>Email: rickf71@gmail.com</div>
+                    <div>Phone: 414-275-0161 | 415-633-6359</div>
                 </Row>
             </Container>
         </div>
