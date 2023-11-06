@@ -30,7 +30,7 @@ export const Home = () => {
         </Row>
         <Row>
           <Col 
-              xs={4} 
+              sm={4} 
               style={{border: '4px solid #FFB84E', 
                   borderRadius:'6px', 
                   lineHeight:'2rem', 
@@ -52,34 +52,34 @@ export const Home = () => {
               <img src={RickNoBG} alt="Rick Fleischman" style={{width: '100%', height: 'auto'}} />
             </Row>
           </Col>
-          <Col xs={8} flex={1} style={{paddingLeft:'3em', }}>
+          <Col sm={8} flex={1} style={{paddingLeft:'3em', }}>
             <Row className="d-flex align-items-center">
-              <Col xs={4}><img src={ReactLogo} alt="React Logo" style={{width: '100%', height: 'auto'}} /></Col>
-              <Col xs={8}>
+              <Col sm={4}><img src={ReactLogo} alt="React Logo" style={{width: '100%', height: 'auto'}} /></Col>
+              <Col sm={8}>
                 <div style={{fontSize: '3rem'}}>React</div>
                 <div style={{fontSize: '1.5rem', lineHeight: '1.6rem', paddingBottom: '1rem'}}>A popular JavaScript library for building user interfaces, I have used React as a front end interface library for several projects.</div>
-                <Row>
-                  <Col xs={1}></Col>
-                  <Col><img src={JSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
-                  <Col><img src={NodeJSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
-                </Row>
               </Col>
             </Row>
-            <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
+            <Row>
+                  <Col sm={1}></Col>
+                  <Col><img src={JSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
+                  <Col><img src={NodeJSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
+            </Row>
+            <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
             <Row className="d-flex align-items-center">
-              <Col xs={8}>
+              <Col sm={4}><img src={JavaLogo} alt="Java Logo" style={{width: '100%', height: 'auto'}} /></Col>
+              <Col sm={8}>
                 <div style={{fontSize: '3rem'}}>Java</div>
                 <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>
                   <div>Java is well established and is widely used in Enterprise Computer Programming.</div>
                   <div>I have experience on a team using Java to create microservice back end for a React front end. Utilized Spring Boot and intefaced with a DyanmoDB database.</div>
                 </div>
               </Col>
-              <Col xs={4}><img src={JavaLogo} alt="Java Logo" style={{width: '100%', height: 'auto'}} /></Col>
             </Row>
-            <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
+            <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
             <Row className="d-flex align-items-center">
-              <Col xs={4}><img src={PHPLogo} alt="PHP Logo" style={{width: '100%', height: 'auto'}} /></Col>
-              <Col xs={8}>
+              <Col sm={4}><img src={PHPLogo} alt="PHP Logo" style={{width: '100%', height: 'auto'}} /></Col>
+              <Col sm={8}>
                 <div style={{fontSize: '3rem'}}>PHP</div>
                 <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>
                   <div>PHP was my first web scripting language.  I had a bit of experience with Microsoft ASP before that, but PHP is where I initially developed my Web Programming skills.</div>
@@ -88,24 +88,24 @@ export const Home = () => {
             </Row>
           </Col>
         </Row>
-        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#356', borderWidth: '5px'}} /></Col></Row>
+        <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '5px'}} /></Col></Row>
 
         <Row>
-          <Col xs={4} style={{textAlign:'center'}}>
+          <Col sm={4} style={{textAlign:'center'}}>
             <h1>Figma</h1>
             <img src={FigmaLogo} alt="Figma Logo" style={{width: '50%', height: 'auto'}} />
             <div>Figma is a collaborative design platform that allows users to create, share, and test designs for websites, apps, and other digital products and experiences.</div>
             <br />
             <div>Figma is used by designers, product managers, and developers of all kinds to create wireframes, mockups, prototypes, and final designs. </div>
           </Col>
-          <Col xs={4} style={{textAlign:'center'}}> 
+          <Col sm={4} style={{textAlign:'center'}}> 
             <h1>Postman</h1>
             <img src={PostmanLogo} alt="Postman Logo" style={{width: '50%', height: 'auto'}} />
             <div>Postman is an API platform for building and using APIs. I've used it to test backend APIs.</div>
             <br />
             <div>Used by developers, QA engineers, and product managers to design, test, document, and monitor APIs.</div>
           </Col>
-          <Col xs={4} style={{textAlign:'center'}}> 
+          <Col sm={4} style={{textAlign:'center'}}> 
             <h1>Jira</h1>
             <img src={JiraLogo} alt="Jira Logo" style={{width: '50%', height: 'auto'}} />
             <div>Jira is a popular issue tracking software that helps teams to manage their work and track their progress.</div>
@@ -113,23 +113,23 @@ export const Home = () => {
             <div>Used by software development teams, IT teams, and other teams to track bugs, tasks, and other work items.</div>
           </Col>
         </Row>
-        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
+        <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
         <Row>
-        <Col xs={4} style={{textAlign:'center'}}> 
+        <Col sm={4} style={{textAlign:'center'}}> 
             <h1>Inkscape</h1>
             <img src={InkscapeLogo} alt="Inkscape Logo" style={{width: '50%', height: 'auto'}} />
             <div>Inkscape is a free and open-source vector graphics editor that can be used to create and edit scalable vector graphics (SVGs).</div>
             <br />
             <div>Used by graphic designers, web designers, and illustrators to create logos, illustrations, icons, and other vector graphics.</div>
           </Col>
-          <Col xs={4} style={{textAlign:'center'}}> 
+          <Col sm={4} style={{textAlign:'center'}}> 
             <h1>Audacity</h1>
             <img src={AudacityLogo} alt="Audacity Logo" style={{width: '50%', height: 'auto'}} />
             <div>Audacity is a free and open-source audio editing software that can be used to record, edit, and mix audio.</div>
             <br />
             <div>Used by musicians, podcasters, and audio engineers to record, edit, and mix music, podcasts, and other audio content.</div>
           </Col>
-          <Col xs={4} style={{textAlign:'center'}}> 
+          <Col sm={4} style={{textAlign:'center'}}> 
             <h1>Gimp</h1>
             <img src={GimpLogo} alt="Gimp Logo" style={{width: '50%', height: 'auto'}} />
             <div>GIMP is a free and open-source raster graphics editor that can be used to create and edit digital images.</div>
@@ -138,7 +138,7 @@ export const Home = () => {
           </Col>
           
         </Row>
-        <Row><Col xs={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
+        <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
 
       </Container>
     )
