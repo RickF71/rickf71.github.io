@@ -8,16 +8,15 @@ export const About = () => {
             <Row>
                 <h3>About Me</h3>
 
-                <p>Hi there! My name is Richard Fleischman and I'm the owner and creator of this website.
+                <p>My name is Richard Fleischman and I'm the owner and creator of this website.
                  On this site, you'll find information about me personally, as well as my interests 
                  in computer programming.</p>
 
                 <h3>Biography</h3>
 
                 <p>I grew up in Franklin, WI, a suburb of Milwaukee, and attended the Milwaukee School 
-                of Engineering (MSOE) where I studied Computer Engineering. While I have several 
-                years towards my degree, I am also self-taught in many programming languages and
-                 technologies. In my spare time, I enjoy programming, gaming, riding my bicycle, and cooking.</p>
+                of Engineering (MSOE) where I studied Computer Engineering. 
+                In my spare time, I enjoy programming, gaming, riding my bicycle, and cooking.</p>
 
                 <h3>Professional Experience</h3>
 
