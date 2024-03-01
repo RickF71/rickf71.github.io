@@ -4,6 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  background-color: #EFEAE5;
 }
 
 h1 {
@@ -20,7 +21,39 @@ h1 {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
+.code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.wavy {
+  position: relative;
+  width: 0px;
+  /* height: 150px; */
+  overflow: hidden;
+  border: 1px solid #aaa;
+  display: inline;
+  padding-bottom: 10px;
+}
+
+.wavy::before {
+  content: 'aaaaassaaaaaaa';
+  position: absolute;
+  top: -0px;
+  left: 0;
+  font-size: 1em;
+  color: transparent;
+  text-decoration-style: wavy;
+  text-decoration-color: #aaa;
+  text-decoration-line: underline;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(-8px);
+  }
 }

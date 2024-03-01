@@ -8,7 +8,7 @@ import './Resume.css'
 
 function Exp({ exp }) {
     return (
-        <div className='exp-job-item' style={{paddingBottom: '1em'}}>
+        // <div className='exp-job-item' style={{paddingBottom: '1em'}}>
             <Container className='exp-job-item-head'>
                 <Row>
                     <Col className='d-flex align-items-center' style={{textAlign: 'left', fontSize: '1.4rem'}}>
@@ -39,7 +39,7 @@ function Exp({ exp }) {
                     ))}
                 </ListGroup>
             </Container>
-        </div>
+        // </div>
     );
 }
 
@@ -47,10 +47,10 @@ function Exp({ exp }) {
 export const Resume = () => {
     return (
         <div className='justify-content-center' style={{}}>
-            <Container className='resume d-flex justify-content-center' style={{marginRight: 0, marginLeft:0, width: '100%', }}>
+            <Container className='resume d-flex justify-content-center' >
                 <Row style={{}}>
                     <Col sm={12} md={4} className='summary'>
-                        <Row style={{textAlign: 'center', fontSize:'2rem'}}>Richard Fleischman</Row>
+                        <Row style={{textAlign: 'center', fontSize:'1.5rem'}}>Richard Fleischman</Row>
                         <Row style={{textAlign: 'center', fontSize:'1.2rem'}}>Full Stack Programmer</Row>
                         <Row style={{textAlign: 'center', fontSize:'1.2rem'}}>Milwaukee, WI</Row>
                         <div>Phone</div>

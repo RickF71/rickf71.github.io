@@ -24,51 +24,38 @@ export const Home = () => {
       setIndex(selectedIndex);
     };
     return (
-      <Container className="josefin-sans">
-        <Row style={{paddingTop: '1em'}}>
-          &nbsp;
-        </Row>
-        <Row>
-          <Col 
-              sm={4} 
-              style={{border: '4px solid #FFB84E', 
-                  borderRadius:'6px', 
-                  lineHeight:'2rem', 
-                  paddingTop: '1em',
-                  }}>
-            <Row>
-              <div style={{fontSize: '24pt', paddingBottom: '2em', letterSpacing:'-0.08em'}}>
-                Full-stack software engineer with 10+ years of experience in building and maintaining web applications.
-              </div>
-            </Row>
-            <Row style={{fontSize: '14pt', paddingLeft: '2em', lineHeight: '1.5rem'}}>
-              <ul>
+      <Container className="josefin-sans no-gutters">
+        <Row className="no-gutters" 
+              style={{fontSize: '14pt', paddingLeft: '2em', 
+                  backgroundColor:'#ECD7C4', 
+                  border: '1px solid black',
+                  borderRadius: '12px',
+                  margin:'1em'}}>
+            <div style={{fontSize: '24pt', paddingBottom: '.5em', letterSpacing:'-0.08em'}}>
+            Full-stack software programmer with 10+ years of experience in building and maintaining web applications.
+          </div>
+              <ul style={{paddingLeft: '2em'}}>
                 <li>Full-stack development skills in HTML, CSS, JavaScript, React, PHP, MySQL, and SQL Server.</li>
                 <li>Experience in designing and implementing scalable and secure web applications.</li>
                 <li>Proven ability to work independently and as part of a team to deliver projects on time and on budget.</li>
               </ul>
             </Row>
-            <Row>
-              {/* <img src={RickNoBG} alt="Rick Fleischman" style={{width: '100%', height: 'auto'}} /> */}
-            </Row>
-          </Col>
-          <Col sm={8} flex={1} style={{paddingLeft:'3em', }}>
             <Row className="d-flex align-items-center">
-              <Col sm={4}><img src={ReactLogo} alt="React Logo" style={{width: '100%', height: 'auto'}} /></Col>
-              <Col sm={8}>
+              <Col sm={2}><img src={ReactLogo} alt="React Logo" style={{width: '100%', height: 'auto'}} /></Col>
+              <Col sm={10}>
                 <div style={{fontSize: '3rem'}}>React</div>
                 <div style={{fontSize: '1.5rem', lineHeight: '1.6rem', paddingBottom: '1rem'}}>A popular JavaScript library for building user interfaces, I have used React as a front end interface library for several projects.</div>
               </Col>
             </Row>
             <Row>
-                  <Col sm={4}></Col>
-                  <Col sm={4}><img src={JSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
-                  <Col sm={4}><img src={NodeJSLogo} alt="React Logo" style={{height: '8rem'}} /></Col>
+                  <Col sm={2}></Col>
+                  <Col sm><img src={JSLogo} alt="React Logo" style={{height: '4rem'}} /></Col>
+                  <Col sm><img src={NodeJSLogo} alt="React Logo" style={{height: '4rem'}} /></Col>
             </Row>
-            <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
+            <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '100%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
             <Row className="d-flex align-items-center">
-              <Col sm={4}><img src={JavaLogo} alt="Java Logo" style={{width: '100%', height: 'auto'}} /></Col>
-              <Col sm={8}>
+              <Col sm={2}><img src={JavaLogo} alt="Java Logo" style={{width: '100%', height: 'auto'}} /></Col>
+              <Col sm={10}>
                 <div style={{fontSize: '3rem'}}>Java</div>
                 <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>
                   <div>Java is well established and is widely used in Enterprise Computer Programming.</div>
@@ -76,18 +63,18 @@ export const Home = () => {
                 </div>
               </Col>
             </Row>
-            <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '50%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
+            <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '100%', color: '#FFB84E', borderWidth: '2px'}} /></Col></Row>
             <Row className="d-flex align-items-center">
-              <Col sm={4}><img src={PHPLogo} alt="PHP Logo" style={{width: '100%', height: 'auto'}} /></Col>
-              <Col sm={8}>
+              <Col sm={2}>
+                <img src={PHPLogo} alt="PHP Logo" style={{width: '100%', height: 'auto'}} />
+              </Col>
+              <Col sm={10}>
                 <div style={{fontSize: '3rem'}}>PHP</div>
                 <div style={{fontSize: '1.5rem', lineHeight: '1.6rem'}}>
                   <div>PHP was my first web scripting language.  I had a bit of experience with Microsoft ASP before that, but PHP is where I initially developed my Web Programming skills.</div>
                 </div>
               </Col>
             </Row>
-          </Col>
-        </Row>
         <Row><Col sm={12} className="d-flex justify-content-center"><hr style={{width: '75%', color: '#FFB84E', borderWidth: '5px'}} /></Col></Row>
         <Row><Col sm={12} className="d-flex justify-content-center" style={{fontSize:'3em',fontWeight:'bold'}} ><div>Other Application Skills</div></Col></Row>
         <Row>

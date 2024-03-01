@@ -1,11 +1,14 @@
 
 body {
   /* background-color: #2B2933; */
-  background-color: #ffffff;
+  background-color: #EFEAE5;
   color: #37303b;
   font-size: 16px;
 }
 
+img {
+  border-radius: 12px;
+}
 @media print {
   .navbar {
     display: none !important;
