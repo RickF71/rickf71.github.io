@@ -11,7 +11,7 @@ export const Navigation = () => {
 
   return (
     <>
-        <Navbar fg="dark" expand="md" variant="light" style={{backgroundColor:'#FFB84E'}}>
+        <Navbar fg="dark" expand="md" variant="light" style={{backgroundColor:'#C49163'}}>
             <Container className="d-flex justify-content-center App">
             <NavbarBrand to="/" style={{fontSize:'1.5em', paddingRight:'1em' }}>Richard Fleischman</NavbarBrand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
