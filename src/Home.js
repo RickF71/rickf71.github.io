@@ -37,7 +37,6 @@ export const Home = () => {
               <ul style={{paddingLeft: '2em'}}>
                 <li>Full-stack development skills in HTML, CSS, JavaScript, React, PHP, MySQL, and SQL Server.</li>
                 <li>Experience in designing and implementing scalable and secure web applications.</li>
-                <li>Proven ability to work independently and as part of a team to deliver projects on time and on budget.</li>
               </ul>
             </Row>
             <Row className="d-flex align-items-center">

@@ -30,8 +30,9 @@ function App() {
   return (
     <>
       <Router>
-        <Navigation />
-        <div style={{height: '1em'}}></div>
+        <div style={{paddingBottom: '1em'}}>
+          <Navigation />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
@@ -39,12 +40,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-    </Router>
-    {/* <Router>
-      <Routes>
-        <Route path="/examples" element={<Examples />} />
-      </Routes>
-    </Router> */}
+      </Router>
     </>
   );
 }
