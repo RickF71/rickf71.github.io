@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cafc95ad.css",
-    "main.js": "/static/js/main.6a88318e.js",
+    "main.css": "/static/css/main.c88f8d5e.css",
+    "main.js": "/static/js/main.87974cae.js",
     "static/js/787.4fd517d6.chunk.js": "/static/js/787.4fd517d6.chunk.js",
     "static/media/base.jpg": "/static/media/base.d6b5331c54468424aed5.jpg",
     "static/media/inkscape-logo-1.png": "/static/media/inkscape-logo-1.704b8b9313ba201061c1.png",
@@ -16,12 +16,12 @@
     "static/media/postman-logo-1.png": "/static/media/postman-logo-1.d4644b8b992bdc7eca2f.png",
     "static/media/logo-nodejs.svg": "/static/media/logo-nodejs.dd47e26ed1d7dddf018e5cbffc40f76d.svg",
     "index.html": "/index.html",
-    "main.cafc95ad.css.map": "/static/css/main.cafc95ad.css.map",
-    "main.6a88318e.js.map": "/static/js/main.6a88318e.js.map",
+    "main.c88f8d5e.css.map": "/static/css/main.c88f8d5e.css.map",
+    "main.87974cae.js.map": "/static/js/main.87974cae.js.map",
     "787.4fd517d6.chunk.js.map": "/static/js/787.4fd517d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cafc95ad.css",
-    "static/js/main.6a88318e.js"
+    "static/css/main.c88f8d5e.css",
+    "static/js/main.87974cae.js"
   ]
 }
