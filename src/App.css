@@ -68,28 +68,42 @@ div.card-body {
   background-color: #c6b3ab; 
 }
 
-.section1, .section2 {
-  margin-top:1em;
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  transform-style: preserve-3d;
+.parallax-layer {
+  position: relative; /* Allows absolute positioning of elements within */
+  height: 100vh; /* Set height to 100% viewport height */
+  text-align: center; /* Center content horizontally */
 }
 
-.section1::before {
-  content: '';
-  width:100%;
-  height:100%;
-  position: absolute;
+.layer1 {
+  background-attachment: fixed; /* Slow scroll (fixed background) */
   background: url('./../public/images/base.jpg') top center;
   background-size: cover;
   transform: translateZ(-1px) scale(2.2);
   filter: blur(2px);
 }
 
-.section2 {
-  background-color: #b77e45;  
+.layer2 {
+  background-attachment: scroll; /* Medium scroll */
 }
+
+.layer3 {
+  background-attachment: fixed; /* Fast scroll (fixed background) */
+  background-position: center -50%; /* Adjust vertical position */
+}
+
+/* .section1::before {
+  content: '';
+  width:100%;
+  height:100%;
+  position: absolute;
+  background: url('./../public/images/base.jpg') top center;
+  background-size: cover;
+  background-attachment: fixed;
+  transform: translateZ(-1px) scale(2.2);
+  filter: blur(2px);
+} */
+
+
 
 .text {
   top:30%;
