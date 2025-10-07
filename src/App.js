@@ -5,7 +5,7 @@ import { Link, HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigation } from './Component/Navigation';
 import { Resume } from './Resume';
 import { Home } from './Home';
-import { Examples } from './Examples';
+import { Dis as DIS } from './Dis';
 import { About } from './About';
 import { Contact } from './Contact';
 import { NotFound } from './NotFound';
@@ -36,7 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/examples" element={<Examples />} />
+          <Route path="/dis" element={<DIS />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
