@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import SkillCard from './Component/SkillCard';
+import DisGatewayCard from './DisGatewayCard';
 import ReactShort from './data/react-short2.png';
 import RickNoBG from './images/rick-no-glasses-no-bg-sm.png';
 
@@ -26,6 +27,7 @@ export const Home = () => {
     };
     return (
       <Container className="josefin-sans no-gutters">
+
         <Row className="no-gutters" 
               style={{fontSize: '14pt', paddingLeft: '2em', 
                   backgroundColor:'#ECD7C4', 

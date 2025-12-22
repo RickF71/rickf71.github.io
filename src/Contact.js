@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
+import DisGatewayCard from './DisGatewayCard';  
 
 export const Contact = () => {
     return (
@@ -12,6 +14,14 @@ export const Contact = () => {
                 <div>LinkedIn: <a href="https://www.linkedin.com/in/rickfleischman/">https://www.linkedin.com/in/rickfleischman/</a></div>
                 <div>Github: <a href='https://rickf71.github.io/'>https://rickf71.github.io/</a></div>
                 <div>Threads: <a href='https://www.threads.net/@fleischmanrick'>https://www.threads.net/@fleischmanrick</a></div>
+            </Container>
+
+            <Container>
+                <Row className="no-gutters">
+                    <Col sm={12}>
+                        <DisGatewayCard />
+                    </Col>
+                </Row>
             </Container>
         </>
     )
