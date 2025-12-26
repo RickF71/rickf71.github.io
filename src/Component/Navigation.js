@@ -36,6 +36,7 @@ export const Navigation = () => {
             <NavItem to="/examples" label="Examples" />
             <NavItem to="/about" label="About" />
             <NavItem to="/contact" label="Contact" />
+            <NavItem to="/jodi" label="J" />
           </Nav>
         </Navbar.Collapse>
       </Container>

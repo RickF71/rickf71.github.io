@@ -7,6 +7,7 @@ import { Resume } from './Resume';
 import { Examples } from './Examples';
 import { About } from './About';
 import { Contact } from './Contact';
+import Jodi from './Jodi';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/examples" element={<Examples />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/jodi" element={<Jodi />} />
       </Routes>
     </Router>
   );
