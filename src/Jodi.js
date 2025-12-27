@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
 /* ---------------------------------
-   Layout constants (single source)
+   Layout constants
 ---------------------------------- */
 const THUMB_SIZE = 64;
 const THUMB_ROW_GAP = 20;
 const THUMB_ROW_BOTTOM = 20;
-const PROJECTION_HEIGHT = 180;
 
 /* ---------------------------------
    Image data
@@ -21,22 +20,20 @@ export default function Jodi() {
   const [opened, setOpened] = useState(false);
   const [activeImage, setActiveImage] = useState(null);
 
-  const projecting = activeImage !== null;
   const activeSrc =
     IMAGES.find((img) => img.id === activeImage)?.src;
 
   return (
     <>
-      {/* Safe, local keyframes */}
       <style>
         {`
           @keyframes lift {
             from {
-              transform: translateY(16px) scaleY(0.92);
+              transform: translateY(18px);
               opacity: 0;
             }
             to {
-              transform: translateY(0) scaleY(1);
+              transform: translateY(0);
               opacity: 1;
             }
           }
@@ -62,34 +59,38 @@ export default function Jodi() {
 
           {/* BACK */}
           <div style={{ ...styles.face, ...styles.back }}>
-            {/* Projected image (ABOVE thumbnails) */}
-            {projecting && (
-              <div
-                style={{
-                  ...styles.projectedImage,
-                  backgroundImage: `url(${activeSrc})`,
-                }}
-              />
+            {/* Popup image */}
+            {activeImage && (
+              <div style={styles.popupFrame}>
+                <img
+                  src={activeSrc}
+                  alt=""
+                  draggable={false}
+                  style={styles.popupImg}
+                />
+              </div>
             )}
 
             {/* Message */}
             <div
               style={{
                 ...styles.message,
-                opacity: projecting ? 0.4 : 1,
+                opacity: activeImage ? 0.45 : 1,
               }}
             >
               <h2 style={styles.heading}>It's Your Birthday!</h2>
 
               <p style={styles.text}>
-                We all have different expectations for our 50th. For me
-                it was the year I finally became an adult.
+                We all have different expectations for our 50th.
+                For me it was the year I finally became an adult.
                 A real grown up. HAHA, j/k.
               </p>
 
               <p style={styles.text}>
-                I made you this little interactive card — a few moments
-                that mean a lot to me, tucked inside.
+                I’ve been rediscovering my love for making things,
+                so I made you this little interactive card.
+                Hover or tap the photos below — some favorite
+                memories of us growing up together.
               </p>
 
               <p style={styles.signature}>
@@ -98,13 +99,12 @@ export default function Jodi() {
               </p>
             </div>
 
-            {/* Thumbnail row */}
+            {/* Thumbnails */}
             <div style={styles.imageStrip}>
               {IMAGES.map((img) => (
                 <Thumb
                   key={img.id}
                   img={img}
-                  active={activeImage === img.id}
                   onEnter={() => setActiveImage(img.id)}
                   onLeave={() => setActiveImage(null)}
                 />
@@ -118,9 +118,9 @@ export default function Jodi() {
 }
 
 /* ---------------------------------
-   Thumbnail
+   Thumbnail (always color)
 ---------------------------------- */
-function Thumb({ img, active, onEnter, onLeave }) {
+function Thumb({ img, onEnter, onLeave }) {
   return (
     <div
       onMouseEnter={onEnter}
@@ -131,7 +131,6 @@ function Thumb({ img, active, onEnter, onLeave }) {
       style={{
         ...styles.thumb,
         backgroundImage: `url(${img.src})`,
-        filter: active ? "grayscale(0%)" : "grayscale(90%)",
       }}
     />
   );
@@ -148,7 +147,7 @@ const styles = {
     alignItems: "center",
     padding: 16,
     background:
-      "linear-gradient(135deg, #fde7e9 0%, #f7efe5 50%, #eef2f7 100%)",
+      "linear-gradient(135deg, #f6d1e7 0%, #cfe9ff 50%, #fff1c1 100%)",
     fontFamily:
       "-apple-system, BlinkMacSystemFont, Inter, Segoe UI, sans-serif",
   },
@@ -169,12 +168,12 @@ const styles = {
     height: "100%",
     backfaceVisibility: "hidden",
     borderRadius: 22,
-    boxShadow: "0 24px 50px rgba(87, 50, 80, 0.18)",
+    boxShadow: "0 24px 50px rgba(80, 40, 90, 0.25)",
   },
 
   front: {
     background:
-      "linear-gradient(160deg, #5b2d4c 0%, #3a1f32 100%)",
+      "linear-gradient(160deg, #ff6ec7 0%, #5b2dff 100%)",
     color: "#fff",
     display: "flex",
     alignItems: "center",
@@ -183,40 +182,38 @@ const styles = {
 
   back: {
     background:
-      "linear-gradient(180deg, #fffaf7 0%, #f6eeea 100%)",
-    color: "#2e2a2c",
+      `
+      repeating-linear-gradient(
+        45deg,
+        rgba(255,110,199,0.08),
+        rgba(255,110,199,0.08) 10px,
+        rgba(91,45,255,0.08) 10px,
+        rgba(91,45,255,0.08) 20px
+      ),
+      linear-gradient(180deg, #fffafc 0%, #f3eefb 100%)
+      `,
+    color: "#2b2430",
     transform: "rotateY(180deg)",
     padding: 24,
-    paddingBottom:
-      PROJECTION_HEIGHT + THUMB_SIZE + THUMB_ROW_GAP + THUMB_ROW_BOTTOM,
+    paddingBottom: THUMB_SIZE + THUMB_ROW_GAP + THUMB_ROW_BOTTOM + 24,
     boxSizing: "border-box",
     position: "relative",
     overflow: "hidden",
   },
 
-  frontInner: {
-    textAlign: "center",
-  },
+  frontInner: { textAlign: "center" },
 
   kicker: {
     letterSpacing: "0.25em",
     textTransform: "uppercase",
     fontSize: 12,
-    opacity: 0.75,
+    opacity: 0.85,
     marginBottom: 12,
   },
 
-  name: {
-    fontSize: 44,
-    fontWeight: 600,
-    margin: 0,
-  },
+  name: { fontSize: 44, fontWeight: 600, margin: 0 },
 
-  tapHint: {
-    marginTop: 20,
-    fontSize: 12,
-    opacity: 0.6,
-  },
+  tapHint: { marginTop: 20, fontSize: 12, opacity: 0.7 },
 
   message: {
     display: "flex",
@@ -227,22 +224,11 @@ const styles = {
     zIndex: 1,
   },
 
-  heading: {
-    fontSize: 22,
-    marginBottom: 14,
-  },
+  heading: { fontSize: 22, marginBottom: 14 },
 
-  text: {
-    fontSize: 15,
-    lineHeight: 1.6,
-    marginBottom: 14,
-  },
+  text: { fontSize: 15, lineHeight: 1.6, marginBottom: 14 },
 
-  signature: {
-    marginTop: "auto",
-    fontSize: 14,
-    opacity: 0.85,
-  },
+  signature: { marginTop: "auto", fontSize: 14, opacity: 0.9 },
 
   imageStrip: {
     position: "absolute",
@@ -261,25 +247,43 @@ const styles = {
     borderRadius: 12,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    boxShadow: "0 8px 18px rgba(0,0,0,0.18)",
+    boxShadow: "0 8px 18px rgba(0,0,0,0.2)",
     cursor: "zoom-in",
-    transition:
-      "filter 0.35s ease, transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1)",
   },
 
-  projectedImage: {
+  /* Popup image behavior */
+  popupFrame: {
     position: "absolute",
     left: 24,
     right: 24,
+
+    /* 👇 anchor above thumbnails */
     bottom: THUMB_SIZE + THUMB_ROW_GAP + THUMB_ROW_BOTTOM,
-    height: PROJECTION_HEIGHT,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+
+    /* 👇 ONLY constrain if it would overflow upward */
+    maxHeight: "calc(100% - 24px)",
+
+    display: "flex",
+    alignItems: "flex-end",   // grow upward
+    justifyContent: "center",
+
+    overflow: "hidden",
     borderRadius: 18,
     zIndex: 3,
     pointerEvents: "none",
-    transformOrigin: "bottom center",
+
     animation: "lift 420ms cubic-bezier(0.34, 1.56, 0.64, 1)",
-    boxShadow: "0 26px 52px rgba(0,0,0,0.28)",
+    boxShadow: "0 26px 52px rgba(0,0,0,0.35)",
   },
+
+
+  popupImg: {
+    width: "100%",
+    height: "auto",
+    maxHeight: "100%",   // only kicks in when needed
+    objectFit: "cover",
+    objectPosition: "center",
+    display: "block",
+  },
+
 };
