@@ -1,0 +1,223 @@
+/* ---------------------------------
+   Animations
+---------------------------------- */
+@keyframes lift {
+  from {
+    transform: translateY(18px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes neonBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---------------------------------
+   Page + Card
+---------------------------------- */
+.jodi-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: linear-gradient(
+    135deg,
+    #f6d1e7 0%,
+    #cfe9ff 50%,
+    #fff1c1 100%
+  );
+  font-family: -apple-system, BlinkMacSystemFont, Inter, Segoe UI, sans-serif;
+}
+
+.jodi-card {
+  width: 100%;
+  max-width: 380px;
+  height: min(85vh, 560px);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.jodi-card.is-open {
+  transform: rotateY(180deg);
+}
+
+/* ---------------------------------
+   Faces
+---------------------------------- */
+.jodi-face {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 22px;
+  box-shadow: 0 24px 50px rgba(80, 40, 90, 0.25);
+}
+
+.jodi-front {
+  background: linear-gradient(160deg, #ff6ec7 0%, #5b2dff 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jodi-back {
+  transform: rotateY(180deg);
+  padding: 24px;
+  padding-bottom: 128px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  color: #2b2430;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,110,199,0.08),
+      rgba(255,110,199,0.08) 10px,
+      rgba(91,45,255,0.08) 10px,
+      rgba(91,45,255,0.08) 20px
+    ),
+    linear-gradient(180deg, #fffafc 0%, #f3eefb 100%);
+}
+
+/* ---------------------------------
+   Front
+---------------------------------- */
+.jodi-frontInner { text-align: center; }
+
+.jodi-kicker {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+.jodi-name {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.jodi-tapHint {
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* ---------------------------------
+   Message
+---------------------------------- */
+.jodi-message {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: opacity 0.35s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.jodi-headingFrame {
+  display: inline-block;
+  padding: 4px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  background: linear-gradient(
+    90deg,
+    #ff6ec7,
+    #5b2dff,
+    #00e5ff,
+    #ff6ec7
+  );
+  background-size: 300% 300%;
+  animation: neonBorder 4s linear infinite;
+}
+
+.jodi-heading {
+  background: linear-gradient(180deg, #fffafc 0%, #f3eefb 100%);
+  padding: 10px 16px;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.jodi-text {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.jodi-signature {
+  margin-top: auto;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ---------------------------------
+   Thumbnails
+---------------------------------- */
+.jodi-imageStrip {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.jodi-thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  cursor: zoom-in;
+}
+
+/* ---------------------------------
+   Popup image
+---------------------------------- */
+.jodi-popupFrame {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: calc(64px + 20px + 20px);
+
+  /* 👇 THIS is the key */
+  max-height: 55%;
+  height: auto;
+
+  display: flex;
+  align-items: center;     /* 👈 center vertically */
+  justify-content: center;
+
+  overflow: hidden;
+  border-radius: 18px;
+  z-index: 3;
+  pointer-events: none;
+
+  animation: lift 420ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 26px 52px rgba(0,0,0,0.35);
+}
+
+.jodi-popupImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
